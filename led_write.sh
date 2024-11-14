@@ -1,5 +1,3 @@
-#!/bin/bash
-
 # Check if input was provided
 if [ "$#" -ne 2 ]
 then
@@ -25,4 +23,3 @@ blue_dec=$(printf '%d' 0x$blue)
 echo $red_dec > /sys/class/leds/red:status-$led_num/brightness
 echo $green_dec > /sys/class/leds/green:status-$led_num/brightness
 echo $blue_dec > /sys/class/leds/blue:status-$led_num/brightness
-
